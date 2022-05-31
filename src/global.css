@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   background: linear-gradient(90deg, hsl(0, 0%, 0%)0%, rgb(42, 42, 50) 100%);
+   color: white;
+}
