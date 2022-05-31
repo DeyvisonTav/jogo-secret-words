@@ -33,7 +33,7 @@ export function App() {
 
   return (
     <div className="flex flex-center justify-center items-center text-center ">
-      <div className="w-screen h-screen bg-gradient-to-r from-black to-zinc-900  hover:bg-gradient-to-r ">
+      <div className="w-screen h-screen bg-gradient-to-b from-black to-zinc-900">
         {gameStage === 'start' && <StartScreen startGame={startGame} />}
         {gameStage === 'game' && <Game verifyLetter={verifyLetter} />}
         {gameStage === 'end' && <GameOver restart={restart} />}
