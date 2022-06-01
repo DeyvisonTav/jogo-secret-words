@@ -26,7 +26,7 @@ export function App() {
   const [guessedLetter, setGuessedLetter]= useState([])
   const [wrongLetter, setWrongLetter] = useState([])
   const [guesses, setGuesses] = useState(3)
-  const [score, setScore] = useState(0)
+  const [score, setScore] = useState(-100)
   
   const pickWordandCategory = useCallback(() => {
      const categories =  Object.keys(word)
@@ -40,7 +40,9 @@ export function App() {
   },[word])
 
   const startGame = useCallback(() => {
-     
+    
+   
+    
     clearLetterStates() 
 
      const {wordss, category} = pickWordandCategory();
@@ -79,27 +81,41 @@ export function App() {
       setGuesses((actualGuesses)=> actualGuesses - 1)
       
     }
- 
+    
+    
 }
 const clearLetterStates =() =>{
   setGuessedLetter([]) 
-  setWrongLetter([])
+  setWrongLetter([]) 
+
 }
+
+useEffect(() => {
+
+  if(score === 0 ){
+setGameStage(stage[0].name) 
+
+  }
+},[score] )
+
 useEffect(() => {
  if(guesses<= 0) {
   clearLetterStates()
    setGameStage(stage[2].name)
  }
 },[guesses])
-   
+ 
 useEffect(() => {
 
   const uniqueLetters = [...new Set(letter)]
-
+   
   if( guessedLetter.length == uniqueLetters.length) {
-    setScore((actualScore)=> (actualScore += 100))
-
-    startGame()
+    
+     let actuaScore = score
+      setScore((actualScore) => actualScore )
+      actuaScore = actuaScore + 100
+      startGame()
+      setScore(actuaScore)
   }
 
 
@@ -116,6 +132,7 @@ useEffect(() => {
   return (
     <div className="flex flex-center justify-center items-center text-center ">
       <div className="w-screen h-screen bg-gradient-to-b from-black to-zinc-900 text-white font-serif" >
+        
         {gameStage === 'start' && <StartScreen startGame={startGame} />}
         {gameStage === 'game' && <Game verifyLetter={verifyLetter} pickedWord={pickedWord} pickedCategory={pickedCategory} letter=  {letter} guessedLetter={guessedLetter} wrongLetter={wrongLetter} guesses={guesses} score={score}  />}
         {gameStage === 'end' && <GameOver restart={restart} score={score} />}
