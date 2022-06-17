@@ -18,13 +18,12 @@
 
 ## 💻 Sobre o projeto
 
-  Secret Word - é um projeto todo desenvolvido em React Js para mostrar meus conhecimentos. 
- Ele é um game no estilo caça palavras em que o player tem 5 chances para ir adivinhando as letras da palavra secreta até completala, o player tem acesso a uma dica sobre a palavra.
- O game também mostras as letras que o Player for errando.
- A cada palavra acertada o player ganha 100 pontos.
+Secret Word - é um projeto todo desenvolvido em React Js para mostrar meus conhecimentos.
+Ele é um game no estilo caça palavras em que o player tem 5 chances para ir adivinhando as letras da palavra secreta até completala, o player tem acesso a uma dica sobre a palavra.
+O game também mostras as letras que o Player for errando.
+A cada palavra acertada o player ganha 100 pontos.
 
- No final do jogo o player tem o total de pontos obtidos em score e a opção de inicar uma nova partida
-
+No final do jogo o player tem o total de pontos obtidos em score e a opção de inicar uma nova partida
 
 ---
 
@@ -32,28 +31,27 @@
 - [x] mostrar pontuação
 - [x] mostar letras erradas
 - [x] 5 chances de acertar uma letra
-- [x] dica sobre a palavra  
+- [x] dica sobre a palavra
 - [x] Roda apenas em pc/notebook
 - [x] botão de reiniar partida
 
 ### Mobile
 
-Ainda em Desenvolvimento 
+Ainda em Desenvolvimento
 
 ---
 
 ### Web
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Secret Word" title="#SecreWord" src="./assets/web 1.png" width="400px">
+  <img alt="Secret Word" title="#SecreWord" src="./assets/Web 1.png" width="400px">
 
-  <img alt="Secret Word" title="#SecretWord" src="./assets/web 2.png" width="400px">
+  <img alt="Secret Word" title="#SecretWord" src="./assets/Web 2.png" width="400px">
 
-  <img alt="Secret Word" title="#SecretWord" src="./assets/web 3.png" width="400px">
+  <img alt="Secret Word" title="#SecretWord" src="./assets/Web 3.png" width="400px">
 </p>
 
 ---
-
 
 ## 🚀 Como executar o projeto/site
 
